@@ -18,7 +18,12 @@ def SearchName(SFZname):
             cell_I4=table.cell_value(i,4)
     return cell_I4
 
-if __name__=='__main__':  #查询函数的方法效率很低，原因可能是每查询一次均要打开一次数据库文件，但是不会报错
+
+#查询函数的方法效率很低，
+#原因可能是每查询一次均要打开一次数据库文件，
+#但是不会报错
+
+if __name__=='__main__':
     fileList=os.listdir(r'd:\test-photo')
     currentDir=os.getcwd()
     os.chdir(r'd:\test-photo')
