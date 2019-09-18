@@ -5,6 +5,7 @@ import os
 import re
 import xlrd
 
+#定义一个通过名字搜索函数
 def SearchName(SFZname):
     data=xlrd.open_workbook(r'd:\testDB.xls')
     table=data.sheet_by_index(0)
